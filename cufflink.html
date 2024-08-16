@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>spatham - Cuff-Link</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">spatham</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">The Cuff-Link</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">The Cuff-Link (video at bottom)</h1>
+							<span class="image fit"><img src="images/CuffLinkPhotoShoot.png" alt="" /></span>
+							<p>Meet the Cuff-Link, a sleek armband meant to replace conventional mice. With soft, 3D-printed TPU for the "cuff", and in built bluetooth capabilities, the Cuff-Link ensures a comfortable and truly immersive experience.</p>
+							<p>Ok marketing jargon out of the way, how does this actually work? Well the most important component is the IMU or inertial measurement unit. This is an onboard motion tracker that uses a gyroscope to gather data about changes in the angle of the Cuff-Link. This data is then processed using an onboard ESP-32 microcontroller, and is then sent via bluetooth low energy to the connected device. Then the data is mapped to mouse movement on screen, successfully creating a moving cursor.</p>
+							<p>The second most important component of the Cuff-Link is the EMG (electromyography) sensor. This component essentially turns your arm into a potentiometer, tracking how much the resistance of your arm changes when its muscles are flexed. When the resistance passes a certain threshold, the Cuff-Link registers a click.</p>
+						</div>
+						<video width="320" height="240" controls>
+							<source src="cufflinkvids/emg.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+						</video>
+						<video width="320" height="240" controls>
+							<source = src="cufflinkvids/imu.mp4" type="video/mp4">
+							Your browser does not support the video tag
+						</video>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
